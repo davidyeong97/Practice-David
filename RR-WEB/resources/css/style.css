@@ -1,0 +1,106 @@
+/* General style */
+html {
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    top: 64px;
+  }
+  .container-left {
+    display: block;
+    width: 60%;
+    margin: 32px 24px;
+  }
+  .container-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto;
+  }
+
+/* nav bar */
+header {
+    display: flex;
+    height: 4rem;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    flex: 1;
+}
+
+header nav {
+    display: flex;
+    flex: 1;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+header li a {
+    color: black;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+/* banner */
+#banner {
+    background-color: lightgrey;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+#banner img {
+    size: 60%;
+    margin: 2rem 1.5rem;
+}
+
+#banner a {
+    padding: 0.5rem;
+    background-color: gray;
+    color: white;
+    text-decoration-line: none;
+}
+
+/* information */
+#information {
+    margin: 2rem 0;
+}
+
+/* course */
+#course {
+    background-color: lightgray;
+    margin: 2rem 4.5rem;
+}
+
+.course-title {
+    text-align: center;
+}
+
+.course-list {
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+/* thesis */
+.thesis-title {
+    text-align: center;
+}
+
+/* footer */
+footer {
+    display: flex;
+}
+
+footer li {
+    display: inline;
+}

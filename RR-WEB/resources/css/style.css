@@ -1,4 +1,5 @@
 /* General style */
+
 html {
     background-color: white;
     font-size: 16px;
@@ -9,20 +10,24 @@ html {
     display: flex;
     position: relative;
     top: 64px;
-  }
-  .container-left {
+}
+
+.container-left {
     display: block;
     width: 60%;
     margin: 32px 24px;
-  }
-  .container-right {
+}
+
+.container-right {
     width: 40%;
     display: flex;
     flex-direction: column;
     margin: 32px auto;
-  }
+}
+
 
 /* nav bar */
+
 header {
     display: flex;
     height: 4rem;
@@ -30,28 +35,28 @@ header {
 }
 
 .logo {
-    display: flex;
+    display: inline-flex;
+    flex: 1;
+    justify-content: flex-start;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    flex: 1;
+    align-items: center;
 }
 
 header nav {
-    display: flex;
     flex: 1;
+    justify-content: flex-end;
+    display: inline-flex;
 }
 
-header ul {
-    display: flex;
-    list-style: none;
-}
-header li a {
-    color: black;
+.nav-item a {
     text-decoration: none;
-    margin: 1rem;
+    color: black;
 }
+
 
 /* banner */
+
 #banner {
     background-color: lightgrey;
     display: flex;
@@ -70,12 +75,16 @@ header li a {
     text-decoration-line: none;
 }
 
+
 /* information */
+
 #information {
     margin: 2rem 0;
 }
 
+
 /* course */
+
 #course {
     background-color: lightgray;
     margin: 2rem 4.5rem;
@@ -86,17 +95,32 @@ header li a {
 }
 
 .course-list {
-    display: grid;
-    grid: auto-flow / 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.list-item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #ffffff;
+}
+
+.list-item img {
+    width: 100%;
+}
+
+
 /* thesis */
+
 .thesis-title {
     text-align: center;
 }
 
+
 /* footer */
+
 footer {
     display: flex;
 }
